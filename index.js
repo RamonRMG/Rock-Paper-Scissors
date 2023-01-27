@@ -26,7 +26,15 @@ function randomPlay(playerChoice){
         console.log("You lose! Scissors beats Paper")
     }
 }
-console.log(randomPlay(playerSelection("paper")));
+
+function game(){
+    for (let i = 0; i < 5; i++){
+       let userChoice = prompt("Make your guess!" ,"").toUpperCase()
+       randomPlay(userChoice)
+    }
+   
+}
+console.log(game())
 
 
 let myRoot = document.getElementById("p").innerHTML = randomPlay(playerSelection("paper"))
